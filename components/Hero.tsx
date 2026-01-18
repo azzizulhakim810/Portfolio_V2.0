@@ -1,8 +1,9 @@
 import { cn } from "@/lib/utils";
 import { FaLocationArrow } from "react-icons/fa6";
-import { MagicButton } from "./ui/MagicButton";
-import { Spotlight } from "./ui/Spotlight";
-import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+
+import { Spotlight } from "./ui/spotlight";
+import { MagicButton } from "./ui/magicButton";
+import { TextGenerateEffect } from "./ui/textGenerateEffect";
 
 export const Hero = () => {
   return (
@@ -46,7 +47,8 @@ export const Hero = () => {
               filter={true}
             />
             <p className=" text-center text-black-600 dark:text-white-400 max-w-xl md:text-lg lg:text-xl mb-4 ">
-              Hi, I'm Azzizul, a passionate web developer based in Bangladesh.
+              Hi, I &apos; m Azzizul, a passionate web developer based in
+              Bangladesh.
             </p>
 
             <a href="#about">
