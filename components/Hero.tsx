@@ -1,9 +1,9 @@
 import { cn } from "@/lib/utils";
 import { FaLocationArrow } from "react-icons/fa6";
 
-import { Spotlight } from "./ui/spotlight";
-import { MagicButton } from "./ui/magicButton";
-import { TextGenerateEffect } from "./ui/textGenerateEffect";
+import { Spotlight } from "./ui/Spotlight";
+import { MagicButton } from "./ui/MagicButton";
+import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 export const Hero = () => {
   return (
@@ -28,7 +28,7 @@ export const Hero = () => {
             "absolute inset-0",
             "[background-size:80px_80px]",
             "[background-image:linear-gradient(to_right,#e4e4e7_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)]",
-            "dark:[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]"
+            "dark:[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]",
           )}
         />
         {/* Radial gradient for the container to give a faded look */}
