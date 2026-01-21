@@ -1,17 +1,19 @@
-// import { useState } from "react";
+"use client";
+import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 
 // Also install this npm i --save-dev @types/react-lottie
-import Lottie from "react-lottie";
 
 import { cn } from "@/lib/utils";
 
 // import { BackgroundGradientAnimation } from "./GradientBg";
-import { MagicButton } from "./MagicButton";
+
 import Image from "next/image";
 import { BackgroundGradientAnimation } from "./GradientBg";
-// import GridGlobe from "./GridGlobe";
-// import animationData from "@/data/confetti.json";
+
+import animationData from "@/data/confetti.json";
+import Lottie from "react-lottie";
+import { MagicButton } from "./MagicButton";
 
 export const BentoGrid = ({
   className,
@@ -56,22 +58,22 @@ export const BentoGridItem = ({
   const leftLists = ["ReactJS", "Express", "Typescript"];
   const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
 
-  // const [copied, setCopied] = useState(false);
+  const [copied, setCopied] = useState(false);
 
-  // const defaultOptions = {
-  //   loop: copied,
-  //   autoplay: copied,
-  //   // animationData: animationData,
-  //   rendererSettings: {
-  //     preserveAspectRatio: "xMidYMid slice",
-  //   },
-  // };
+  const defaultOptions = {
+    loop: copied,
+    autoplay: copied,
+    animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
 
-  // const handleCopy = () => {
-  //   const text = "hsu@jsmastery.pro";
-  //   navigator.clipboard.writeText(text);
-  //   setCopied(true);
-  // };
+  const handleCopy = () => {
+    const text = "azzizul.hakim202@gmail.com";
+    navigator.clipboard.writeText(text);
+    setCopied(true);
+  };
 
   return (
     <div
@@ -143,7 +145,7 @@ export const BentoGridItem = ({
           </div>
 
           {/* for the github 3d globe */}
-          {/* {id === 2 && <GridGlobe />} */}
+          {/* {id === 2 && <GridDemo />} */}
 
           {/* Tech stack list div */}
           {id === 3 && (
@@ -181,22 +183,22 @@ export const BentoGridItem = ({
               {/* add rounded-md h-8 md:h-8, remove rounded-full */}
               {/* remove focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 */}
               {/* add handleCopy() for the copy the text */}
-              {/* <div
+              <div
                 className={`absolute -bottom-5 right-0 ${
                   copied ? "block" : "block"
                 }`}
               >
-                <img src="/confetti.gif" alt="confetti" />
+                {/* <img src="/confetti.gif" alt="confetti" /> */}
                 <Lottie options={defaultOptions} height={200} width={400} />
-              </div> */}
+              </div>
 
-              {/* <MagicButton
+              <MagicButton
                 title={copied ? "Email is Copied!" : "Copy my email address"}
                 icon={<IoCopyOutline />}
                 position="left"
                 handleClick={handleCopy}
-                otherClasses="!bg-[#161A31]"
-              /> */}
+                otherClasses="!bg-[#161A31] rounded-[10px]"
+              />
             </div>
           )}
         </div>
