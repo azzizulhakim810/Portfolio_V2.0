@@ -4,6 +4,7 @@ import { FaLocationArrow } from "react-icons/fa6";
 
 import { projects } from "@/data";
 import { PinContainer } from "./ui/PinContainer";
+import Image from "next/image";
 
 export const RecentProjects = () => {
   return (
@@ -12,7 +13,7 @@ export const RecentProjects = () => {
         A small selection of{" "}
         <span className="text-purple">recent projects</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
+      <div className="flex flex-wrap items-center justify-center p-4 gap-x-20 gap-y-24 mt-10">
         {projects.map((item) => (
           <div
             className="sm:h-[41rem]lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-[570px] w-[80vw]"
@@ -27,9 +28,11 @@ export const RecentProjects = () => {
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
                 >
-                  <img src="/bg.png" alt="bgimg" />
+                  <Image height={500} width={500} src="/bg.png" alt="bgimg" />
                 </div>
-                <img
+                <Image
+                  height={500}
+                  width={500}
                   src={item.img}
                   alt="cover"
                   className="z-10 absolute bottom-0"
