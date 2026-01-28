@@ -3,8 +3,8 @@
 import { FaLocationArrow } from "react-icons/fa6";
 
 import { projects } from "@/data";
-import { PinContainer } from "./ui/PinContainer";
 import Image from "next/image";
+import { PinContainer } from "./ui/PinContainer";
 
 export const RecentProjects = () => {
   return (
@@ -13,26 +13,26 @@ export const RecentProjects = () => {
         A small selection of{" "}
         <span className="text-purple">recent projects</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-x-20 gap-y-24 mt-10">
+      <div className="flex w-[120%] m-auto gap-x-5 gap-y-0">
         {projects.map((item) => (
           <div
-            className="sm:h-[41rem]lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-[570px] w-[80vw]"
+            className="sm:h-[41rem] lg:min-h-[5rem] h-[25rem] flex items-center justify-center sm:w-[400px] w-[60vw]"
             key={item.id}
           >
             <PinContainer
               title="/ui.aceternity.com"
               href="https://twitter.com/mannupaaji"
             >
-              <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden h-[20vh] sm:h-[40vh] lg:h-[30vh] mb-10">
+              <div className="relative flex items-center justify-center sm:w-[370px] w-[80vw] overflow-hidden h-[20vh] sm:h-[38vh] lg:h-[38vh] mb-10">
                 <div
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
                 >
-                  <Image height={500} width={500} src="/bg.png" alt="bgimg" />
+                  <Image height={400} width={400} src="/bg.png" alt="bgimg" />
                 </div>
                 <Image
-                  height={500}
-                  width={500}
+                  height={380}
+                  width={380}
                   src={item.img}
                   alt="cover"
                   className="z-10 absolute bottom-0"
