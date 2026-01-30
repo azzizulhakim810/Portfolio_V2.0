@@ -47,8 +47,7 @@ export const Hero = () => {
               filter={true}
             />
             <p className=" text-center text-black-600 dark:text-white-400 max-w-xl md:text-lg lg:text-xl mb-4 ">
-              Hi, I &apos; m Azzizul, a passionate web developer based in
-              Bangladesh.
+              Hi, I'm Azzizul, a passionate web developer based in Bangladesh.
             </p>
 
             <a href="#about">

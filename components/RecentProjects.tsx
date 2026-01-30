@@ -8,17 +8,14 @@ import { PinContainer } from "./ui/PinContainer";
 
 export const RecentProjects = () => {
   return (
-    <div className="py-20" id="recent-projects">
+    <div className="pt-20 pb-40" id="recent-projects">
       <h1 className="heading">
         A small selection of{" "}
         <span className="text-purple">recent projects</span>
       </h1>
-      <div className="flex w-[120%] m-auto gap-x-5 gap-y-0">
+      <div className="grid grid-cols-3 mt-36 gap-x-2 gap-y-[230px]">
         {projects.map((item) => (
-          <div
-            className="sm:h-[41rem] lg:min-h-[5rem] h-[25rem] flex items-center justify-center sm:w-[400px] w-[60vw]"
-            key={item.id}
-          >
+          <div className=" flex items-center justify-center" key={item.id}>
             <PinContainer
               title="/ui.aceternity.com"
               href="https://twitter.com/mannupaaji"
@@ -28,7 +25,7 @@ export const RecentProjects = () => {
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
                 >
-                  <Image height={400} width={400} src="/bg.png" alt="bgimg" />
+                  <Image height={380} width={380} src="/bg.png" alt="bgimg" />
                 </div>
                 <Image
                   height={380}
