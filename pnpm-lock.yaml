@@ -69,6 +69,9 @@ importers:
       '@types/react-lottie':
         specifier: ^1.2.10
         version: 1.2.10
+      '@types/three':
+        specifier: ^0.182.0
+        version: 0.182.0
       autoprefixer:
         specifier: ^10.4.23
         version: 10.4.23(postcss@8.5.6)
