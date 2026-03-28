@@ -16,10 +16,7 @@ export const RecentProjects = () => {
       <div className="grid grid-cols-3 mt-36 gap-x-2 gap-y-[230px]">
         {projects.map((item) => (
           <div className=" flex items-center justify-center" key={item.id}>
-            <PinContainer
-              title="/ui.aceternity.com"
-              href="https://twitter.com/mannupaaji"
-            >
+            <PinContainer title="Click to visit" href={item.link}>
               <div className="relative flex items-center justify-center sm:w-[370px] w-[80vw] overflow-hidden h-[20vh] sm:h-[38vh] lg:h-[38vh] mb-10">
                 <div
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
